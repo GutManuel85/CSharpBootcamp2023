@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04_Array", "P04_Array\P04_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05_Schleifen", "P05_Schleifen\P05_Schleifen.csproj", "{0C005E14-71AD-4A4F-927A-116E73022ED9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06_IfStatements", "P06_IfStatements\P06_IfStatements.csproj", "{8C8E0E91-AC02-48C8-B871-B03CE1328C30}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{0C005E14-71AD-4A4F-927A-116E73022ED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C005E14-71AD-4A4F-927A-116E73022ED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C005E14-71AD-4A4F-927A-116E73022ED9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C8E0E91-AC02-48C8-B871-B03CE1328C30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C8E0E91-AC02-48C8-B871-B03CE1328C30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C8E0E91-AC02-48C8-B871-B03CE1328C30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C8E0E91-AC02-48C8-B871-B03CE1328C30}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
