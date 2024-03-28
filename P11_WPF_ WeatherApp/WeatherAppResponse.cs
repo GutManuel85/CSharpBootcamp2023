@@ -2,7 +2,7 @@
 
 namespace P11_WPF__WeatherApp
 {
-    internal class WeatherAppResponse
+    public class WeatherAppResponse
     {
 
         public Main main;

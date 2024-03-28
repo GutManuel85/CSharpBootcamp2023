@@ -1,6 +1,6 @@
 ﻿namespace P11_WPF__WeatherApp
 {
-    internal class Weather
+    public class Weather
     {
         public int id;
         public string main;

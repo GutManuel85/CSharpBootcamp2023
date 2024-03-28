@@ -5,8 +5,51 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:P11_WPF__WeatherApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="512" Width="1025"
+        ResizeMode="NoResize">
         
+    <Grid>
+        <Grid.Background>
+            <ImageBrush x:Name="backgroundImage" ImageSource="\P11_WPF_ WeatherApp;component\Images\Sun.png">
+                
+            </ImageBrush>
+        </Grid.Background>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Padding="5" CornerRadius="25" BorderThickness="1" Background="White">
+            <TextBox x:Name="inputCity" Text="Luzern" TextAlignment="Center" Background="Transparent" BorderThickness="0" FontFamily="Franklin Gothic Medium" FontSize="30" FontWeight="Bold"></TextBox>
+        </Border>
+        <Border Grid.Column="4" Grid.Row="1" Padding="5" CornerRadius="5" BorderThickness="1" Background="White">
+            <Button Click="ButtonClick" Content="Update" Cursor="Hand" HorizontalAlignment="Center" Background="Transparent" BorderThickness="0" FontFamily="Franklin Gothic Medium" FontSize="30" Width="302"></Button>
+        </Border>
+
+        <Label x:Name="labelTemperature" Grid.Column="1"  Grid.Row="3" Content="40°C" HorizontalAlignment="Center"  VerticalAlignment="Center" FontSize="100" FontWeight="Bold" FontFamily="Franklin Gothic Medium" Foreground="White">
+            <Label.Effect>
+                <DropShadowEffect Color="Black"  ShadowDepth="5" BlurRadius="1"/>
+            </Label.Effect>
+        </Label>
+        <Label x:Name="labelWeather" Grid.Column="1" Grid.Row="4" Content="Sunny" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="45"  FontFamily="Ebrima" Foreground="White">
+            <Label.Effect>
+                <DropShadowEffect Color="Black"  ShadowDepth="2" BlurRadius="1"/>
+            </Label.Effect>
+        </Label>
     </Grid>
 </Window>
