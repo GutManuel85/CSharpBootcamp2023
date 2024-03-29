@@ -5,29 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:P11_WPF__WeatherApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="512" Width="1025"
+        Title="My awesome Weather App" Height="512" Width="1025"
         ResizeMode="NoResize">
-        
+
     <Grid>
         <Grid.Background>
             <ImageBrush x:Name="backgroundImage" ImageSource="\P11_WPF_ WeatherApp;component\Images\Sun.png">
-                
+
             </ImageBrush>
         </Grid.Background>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="20"></ColumnDefinition>
+            <ColumnDefinition Width="40"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition Width="20"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition Width="20"></ColumnDefinition>
+            <ColumnDefinition Width="40"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
             <RowDefinition Height="20"></RowDefinition>
             <RowDefinition Height="50"></RowDefinition>
-
+            <RowDefinition Height="60"></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
@@ -41,12 +41,50 @@
             <Button Click="ButtonClick" Content="Update" Cursor="Hand" HorizontalAlignment="Center" Background="Transparent" BorderThickness="0" FontFamily="Franklin Gothic Medium" FontSize="30" Width="302"></Button>
         </Border>
 
-        <Label x:Name="labelTemperature" Grid.Column="1"  Grid.Row="3" Content="40°C" HorizontalAlignment="Center"  VerticalAlignment="Center" FontSize="100" FontWeight="Bold" FontFamily="Franklin Gothic Medium" Foreground="White">
+        <Label x:Name="labelCoordLon" Grid.Column="1" Grid.Row="2" Content="lon: 8.3064" Margin="0,0,20,0" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="30"  FontFamily="Ebrima" Foreground="Black">
+            <Label.Effect>
+                <DropShadowEffect Color="White"  ShadowDepth="1" BlurRadius="1"/>
+            </Label.Effect>
+        </Label>
+
+        <Label x:Name="labelCoordLat" Grid.Column="2" Grid.Row="2" Content="lat: 47.0505" Margin="20,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="30"  FontFamily="Ebrima" Foreground="Black">
+            <Label.Effect>
+                <DropShadowEffect Color="White"  ShadowDepth="1" BlurRadius="1"/>
+            </Label.Effect>
+        </Label>
+
+        <Label x:Name="labelTemperature" Grid.Column="1"  Grid.Row="3" Content="30.2°C" HorizontalAlignment="Right"  VerticalAlignment="Center" FontSize="80" FontWeight="Bold" FontFamily="Franklin Gothic Medium" Foreground="White">
             <Label.Effect>
                 <DropShadowEffect Color="Black"  ShadowDepth="5" BlurRadius="1"/>
             </Label.Effect>
         </Label>
-        <Label x:Name="labelWeather" Grid.Column="1" Grid.Row="4" Content="Sunny" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="45"  FontFamily="Ebrima" Foreground="White">
+        <Label x:Name="labelTempMin" Grid.Column="1" Grid.Row="4" Content="min: 12.64°C" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="30"  FontFamily="Ebrima" Foreground="White" Grid.RowSpan="2">
+            <Label.Effect>
+                <DropShadowEffect Color="Black"  ShadowDepth="2" BlurRadius="1"/>
+            </Label.Effect>
+        </Label>
+        <Label x:Name="labelTempMax" Grid.Column="1" Grid.Row="4" Content="max: 20.07°C" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="30"  FontFamily="Ebrima" Foreground="White" Grid.ColumnSpan="1" Margin="0,46,0,0">
+            <Label.Effect>
+                <DropShadowEffect Color="Black"  ShadowDepth="2" BlurRadius="1"/>
+            </Label.Effect>
+        </Label>
+        <Label x:Name="labelWeather" Grid.Column="1" Grid.Row="5" Content="Sunny" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="45"  FontFamily="Ebrima" Foreground="White">
+            <Label.Effect>
+                <DropShadowEffect Color="Black"  ShadowDepth="2" BlurRadius="1"/>
+            </Label.Effect>
+        </Label>
+
+        <Label x:Name="labelWind" Grid.Column="4" Grid.Row="3" Content="Wind: 10 miles" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="30"  FontFamily="Ebrima" Foreground="White">
+            <Label.Effect>
+                <DropShadowEffect Color="Black"  ShadowDepth="2" BlurRadius="1"/>
+            </Label.Effect>
+        </Label>
+        <Label x:Name="labelPressure" Grid.Column="4" Grid.Row="4" Content="Pressure: 1001 mbar" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="30"  FontFamily="Ebrima" Foreground="White">
+            <Label.Effect>
+                <DropShadowEffect Color="Black"  ShadowDepth="2" BlurRadius="1"/>
+            </Label.Effect>
+        </Label>
+        <Label x:Name="labelHumidity" Grid.Column="4" Grid.Row="5" Content="Humidity: 52 %" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="30"  FontFamily="Ebrima" Foreground="White">
             <Label.Effect>
                 <DropShadowEffect Color="Black"  ShadowDepth="2" BlurRadius="1"/>
             </Label.Effect>

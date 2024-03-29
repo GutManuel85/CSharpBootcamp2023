@@ -7,6 +7,8 @@ namespace P11_WPF__WeatherApp
 
         public Main main;
         public List<Weather> weather;
+        public Coord coord;
+        public Wind wind;
 
     }
 }

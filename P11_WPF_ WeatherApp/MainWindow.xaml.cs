@@ -24,7 +24,6 @@ namespace P11_WPF__WeatherApp
 
             UpdateData("Lucerne");
 
-            Console.WriteLine("Breakpoint");
         }
 
         public WeatherAppResponse GetWeatherData(string city)
@@ -46,8 +45,29 @@ namespace P11_WPF__WeatherApp
                 string imagePath = GetImagePath(data);
                 backgroundImage.ImageSource = new BitmapImage(new Uri(imagePath, UriKind.Relative));
 
+                float coordLon = float.Parse(data.coord.lon.ToString("F1"));
+                labelCoordLon.Content = $"Longitude: {coordLon}°";
+
+                float coordLat = float.Parse(data.coord.lat.ToString("F1"));
+                labelCoordLat.Content = $"Laltitude: {coordLat}°";
+
                 float temperature = float.Parse(data.main.temp.ToString("F1"));
                 labelTemperature.Content = temperature + "°C";
+
+                float tempMin = float.Parse(data.main.temp_min.ToString("F1"));
+                labelTempMin.Content = $"min: {tempMin}°";
+
+                float tempMax = float.Parse(data.main.temp_max.ToString("F1"));
+                labelTempMax.Content = $"max: {tempMax}°";
+
+                float wind = float.Parse(data.wind.speed.ToString("F1"));
+                labelWind.Content = $"Wind: {wind} mph";
+
+                float pressure = int.Parse(data.main.pressure.ToString());
+                labelPressure.Content = $"Pressure: {pressure} mbar";
+
+                float humiditiy = int.Parse(data.main.humidity.ToString());
+                labelHumidity.Content = $"Humidity: {humiditiy} %";
 
                 string description = data.weather[0].description;
                 labelWeather.Content = description;
@@ -84,5 +104,7 @@ namespace P11_WPF__WeatherApp
 
             UpdateData(query);
         }
+
+        string check = "check";
     }
 }
