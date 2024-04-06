@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P12_Quiz_Klasse", "P12_Quiz
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P12_Dictionaries_UseCase", "P12_Dictionaries_UseCase\P12_Dictionaries_UseCase.csproj", "{CFFC42EE-0777-49BD-A72E-2A73A6C0A018}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P13_Switch_Enum", "P13_Switch_Enum\P13_Switch_Enum.csproj", "{13ABD4EC-7FBA-4E34-842D-A74C33482119}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{CFFC42EE-0777-49BD-A72E-2A73A6C0A018}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFFC42EE-0777-49BD-A72E-2A73A6C0A018}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFFC42EE-0777-49BD-A72E-2A73A6C0A018}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13ABD4EC-7FBA-4E34-842D-A74C33482119}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13ABD4EC-7FBA-4E34-842D-A74C33482119}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13ABD4EC-7FBA-4E34-842D-A74C33482119}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13ABD4EC-7FBA-4E34-842D-A74C33482119}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
