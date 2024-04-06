@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P12_Dictionaries", "P12_Dic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P12_Quiz_Klasse", "P12_Quiz_Klasse\P12_Quiz_Klasse.csproj", "{A4EE2346-E69F-48B3-9A09-DF9597EA2704}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P12_Dictionaries_UseCase", "P12_Dictionaries_UseCase\P12_Dictionaries_UseCase.csproj", "{CFFC42EE-0777-49BD-A72E-2A73A6C0A018}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{A4EE2346-E69F-48B3-9A09-DF9597EA2704}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4EE2346-E69F-48B3-9A09-DF9597EA2704}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4EE2346-E69F-48B3-9A09-DF9597EA2704}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFFC42EE-0777-49BD-A72E-2A73A6C0A018}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFFC42EE-0777-49BD-A72E-2A73A6C0A018}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFFC42EE-0777-49BD-A72E-2A73A6C0A018}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFFC42EE-0777-49BD-A72E-2A73A6C0A018}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

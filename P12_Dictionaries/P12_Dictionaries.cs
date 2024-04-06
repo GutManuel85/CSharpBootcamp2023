@@ -10,12 +10,34 @@
             translations.Add("house", "Haus");
             translations.Add("mouse", "Maus");
             translations.Add("man", "Mann");
+            
+            translations.Remove("house");
+            translations.Clear();
 
             // Proudkt | Preis
             Dictionary<string, float> prices = new Dictionary<string, float>();
             prices.Add("Milk", 1.45f);
             prices.Add("Bread", 3.45f);
             prices.Add("Apfel 1kg", 4.5F);
+
+            if (prices.ContainsKey("Milk"))
+            {
+                Console.WriteLine(prices["Milk"]);
+            }
+
+            if (prices.ContainsValue(1.45f))
+            {
+                Console.WriteLine("Es gibt ein Produkt, das 1.45 kostet");
+            }
+
+            if (prices.TryGetValue("Bread", out float breadPrice))
+            {
+                Console.WriteLine($"Brotpreis: CHF {breadPrice}.-");
+            }
+            else
+            {
+                Console.WriteLine("Brot nicht im Sortiment enthalten.");
+            }
 
             // Quiz
             Dictionary<string, string> quiz = new Dictionary<string, string>();
