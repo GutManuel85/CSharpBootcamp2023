@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P12_Dictionaries_UseCase", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P13_Switch_Enum", "P13_Switch_Enum\P13_Switch_Enum.csproj", "{13ABD4EC-7FBA-4E34-842D-A74C33482119}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P14_ErweiterteSchleifenTechnik", "P14_ErweiterteSchleifenTechnik\P14_ErweiterteSchleifenTechnik.csproj", "{E1134FEB-344B-41F1-8A82-31B90F11F057}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{13ABD4EC-7FBA-4E34-842D-A74C33482119}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13ABD4EC-7FBA-4E34-842D-A74C33482119}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13ABD4EC-7FBA-4E34-842D-A74C33482119}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1134FEB-344B-41F1-8A82-31B90F11F057}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1134FEB-344B-41F1-8A82-31B90F11F057}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1134FEB-344B-41F1-8A82-31B90F11F057}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1134FEB-344B-41F1-8A82-31B90F11F057}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
